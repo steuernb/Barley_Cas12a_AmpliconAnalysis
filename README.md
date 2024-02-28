@@ -1,7 +1,7 @@
 # Barley Cas12a Amplicon Analysis
 
 
-scripts for work in manuscript "__An Optimised CRISPR Cas9 and Cas12a Toolkit for Wheat and Barley__"
+scripts for work in manuscript "__An Optimised CRISPR Cas9 and Cas12a Toolkit for Wheat and Barley__" (in preparation)
 
 
 
@@ -25,7 +25,7 @@ Run bwa. Use [genes.fasta](https://github.com/steuernb/Barley_Cas12a_AmpliconAna
 * Map each amplicon sample separately
 		
 	```
-	bwa mem SampleX_R1.fq.gz SampleX_R2.fq.gz > SampleX.sam
+	bwa mem genes.fasta SampleX_R1.fq.gz SampleX_R2.fq.gz > SampleX.sam
 	```
 		
 	_Note: Downstream scripts test for suffix `.sam` to process a mapping file._
